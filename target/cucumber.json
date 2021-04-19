@@ -1,0 +1,234 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-19T23:37:09.395Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3979702000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.SearchAndSelectSteps.setup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "As a user I should get an error message \"Please enter a valid city\" when do not enter \"to\" city",
+        "description": "",
+        "id": "search-and-select-flights;as-a-user-i-should-get-an-error-message-\"please-enter-a-valid-city\"-when-do-not-enter-\"to\"-city",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8958544000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I navigate to JetBlue website",
+            "match": {
+              "location": "steps.SearchAndSelectSteps.i_navigate_to_JetBlue_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2435636000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Search flights",
+            "match": {
+              "location": "steps.SearchAndSelectSteps.i_click_on_search_flights()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 297529000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should get an error message \"Please enter a valid city.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please enter a valid city.\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.SearchAndSelectSteps.i_should_get_an_error_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          },
+          {
+            "name": "@select"
+          },
+          {
+            "name": "@search"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-19T23:37:25.272Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4060000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.SearchAndSelectSteps.setup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "As a user I should see Return Date prior to Depart date is disabled",
+        "description": "",
+        "id": "search-and-select-flights;as-a-user-i-should-see-return-date-prior-to-depart-date-is-disabled",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 33862240000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I navigate to JetBlue website",
+            "match": {
+              "location": "steps.SearchAndSelectSteps.i_navigate_to_JetBlue_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1636316000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enter From city as \"New York\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New York\"",
+                  "offset": 21
+                }
+              ],
+              "location": "steps.SearchAndSelectSteps.i_enter_from_city_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 460191000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter To city as \"Toronto\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Toronto\"",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.SearchAndSelectSteps.i_enter_to_city_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 280292000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I select Depart date",
+            "match": {
+              "location": "steps.SearchAndSelectSteps.i_select_depart_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 210866000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I try to select Return Date prior to Depart date",
+            "match": {
+              "location": "steps.SearchAndSelectSteps.i_try_to_select_return_date_prior_to_depart_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6645000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Return Date prior to Depart date should be disabled",
+            "match": {
+              "location": "steps.SearchAndSelectSteps.return_date_prior_to_depart_date_should_be_disabled()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 142465000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "close the browser",
+            "match": {
+              "location": "steps.SearchAndSelectSteps.i_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          },
+          {
+            "name": "@select"
+          },
+          {
+            "name": "@search"
+          }
+        ]
+      }
+    ],
+    "name": "Search and Select flights",
+    "description": "  I Search fights and select lowest fare",
+    "id": "search-and-select-flights",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/SearchAndSelect.feature",
+    "tags": [
+      {
+        "name": "@search",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      },
+      {
+        "name": "@select",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 9
+        }
+      }
+    ]
+  }
+]
