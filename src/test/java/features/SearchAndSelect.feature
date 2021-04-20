@@ -8,7 +8,7 @@ Feature: Search and Select flights
   @search
   Scenario: As a user I should get an error message "Please enter a valid city" when do not enter "to" city
   	Given I navigate to JetBlue website
-    #When I enter From city as "New York"
+    When I enter From city as "New York"
     And I click on Search flights
     Then I should get an error message "Please enter a valid city."
 
